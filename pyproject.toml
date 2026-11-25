@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "alarmclock-cli"
+version = "1.0.0"
+description = "A terminal alarm clock: one-shot and repeating alarms, snooze, timers. Pure Python, no dependencies."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+classifiers = [
+    "Environment :: Console",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+alarm = "alarmclock.cli:main"
+
+[tool.setuptools]
+packages = ["alarmclock"]
